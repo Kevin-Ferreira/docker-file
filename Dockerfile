@@ -1,7 +1,7 @@
 # Mon dockerfile
 FROM  fedora:latest
 RUN dnf -y update
-RUN dnf install wget tar git
+RUN dnf install wget tar git -y
 WORKDIR /home/work
 COPY Chinook_Sqlite.sqlite /home/work
 COPY jointure.py /home/work
