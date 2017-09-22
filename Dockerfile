@@ -3,8 +3,8 @@ FROM  fedora:latest
 RUN dnf -y update
 RUN dnf install wget tar git
 WORKDIR /home/work
-COPY /home/ferreira/python/Chinook_Sqlite.sqlite /home/work
-COPY /home/ferreira/python/SQL/jointure.py /home/work
+COPY Chinook_Sqlite.sqlite /home/work
+COPY jointure.py /home/work
 CMD ["python3","jointure.py"]
 
 
